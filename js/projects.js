@@ -1,6 +1,7 @@
 // Portfolio data — edit this list to add, remove, or reorder projects.
 // Fields: title, tagline, description, tags (shown as chips + used for filters),
-// links (optional: live, code), image (optional path under assets/).
+// links (optional: live, code), image (optional path under assets/),
+// hidden (optional: true keeps the project off the page).
 window.PROJECTS = [
   {
     title: "cheapGas",
@@ -14,7 +15,8 @@ window.PROJECTS = [
     tagline: "An AI you have to convince to help you",
     description: "A chat game powered by Claude: talk Brooks into helping, then solve the grid. Python + FastAPI with streamed replies.",
     tags: ["AI", "Game"],
-    links: { live: "", code: "" }, // brooks/ — re-enable when ready to launch
+    links: { live: "brooks/", code: "" },
+    hidden: true, // not launched yet — remove this line to show it
   },
   {
     title: "NCAAdle",

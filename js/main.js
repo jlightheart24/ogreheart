@@ -1,5 +1,5 @@
 (function () {
-  const projects = window.PROJECTS || [];
+  const projects = (window.PROJECTS || []).filter((p) => !p.hidden);
   const grid = document.getElementById("projects");
   const filtersEl = document.querySelector(".filters");
 
@@ -25,7 +25,19 @@
         }
         card.appendChild(thumb);
 
-        card.appendChild(el("h3", {}, p.title));
+        // Links to our own pages (e.g. "barber/") open in this tab; other sites in a new one.
+        const linkAttrs = (href) =>
+          /^https?:/.test(href) ? { href, target: "_blank", rel: "noopener" } : { href };
+
+        const title = el("h3");
+        if (p.links?.live) {
+          // The title link stretches over the whole card, so clicking anywhere opens it.
+          card.classList.add("has-link");
+          title.appendChild(el("a", { ...linkAttrs(p.links.live), class: "card-link" }, p.title));
+        } else {
+          title.textContent = p.title;
+        }
+        card.appendChild(title);
         card.appendChild(el("p", { class: "tagline" }, p.tagline));
         card.appendChild(el("p", {}, p.description));
 
@@ -34,8 +46,8 @@
         card.appendChild(tags);
 
         const links = el("div", { class: "links" });
-        if (p.links?.live) links.appendChild(el("a", { href: p.links.live, target: "_blank", rel: "noopener" }, "Visit ↗"));
-        if (p.links?.code) links.appendChild(el("a", { href: p.links.code, target: "_blank", rel: "noopener" }, "Code ↗"));
+        if (p.links?.live) links.appendChild(el("a", linkAttrs(p.links.live), "Visit →"));
+        if (p.links?.code) links.appendChild(el("a", linkAttrs(p.links.code), "Code ↗"));
         if (links.childElementCount) card.appendChild(links);
 
         grid.appendChild(card);
