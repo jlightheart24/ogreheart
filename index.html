@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ogreheart — Software Development</title>
+  <meta name="description" content="Ogreheart is a software development studio building web apps, mobile apps, and AI-powered tools.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Ogreheart home">
+        <img src="assets/favicon.svg" alt="" width="28" height="28">
+        <span>ogre<b>heart</b></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Software development studio</p>
+        <h1>Tough engineering.<br><span class="accent">Built with heart.</span></h1>
+        <p class="lead">
+          Ogreheart designs and builds web apps, mobile apps, and AI-powered tools
+          for small businesses and ambitious ideas — from first sketch to shipped product.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn">See the work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>What I build</h2>
+        <div class="grid services">
+          <article class="card">
+            <div class="icon">⌘</div>
+            <h3>Web applications</h3>
+            <p>Fast, responsive sites and full-stack apps, from marketing pages to dashboards.</p>
+          </article>
+          <article class="card">
+            <div class="icon">▣</div>
+            <h3>Mobile apps</h3>
+            <p>iOS and cross-platform apps that feel native and are easy to maintain.</p>
+          </article>
+          <article class="card">
+            <div class="icon">✦</div>
+            <h3>AI integrations</h3>
+            <p>Practical AI features — assistants, automation, and data tools — wired into real products.</p>
+          </article>
+          <article class="card">
+            <div class="icon">⚙</div>
+            <h3>Small-business tech</h3>
+            <p>Booking, scheduling, and online presence for local businesses that need it to just work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <div class="filters" role="tablist" aria-label="Filter projects"></div>
+        </div>
+        <div class="grid projects" id="projects"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div>
+          <h2>About Ogreheart</h2>
+          <p>
+            Ogreheart is run by Jonny Lightheart, a software developer who likes building
+            things people actually use. The name says it: strong, no-nonsense engineering
+            paired with genuine care for the people on the other end of the screen.
+          </p>
+          <p>
+            Whether you need a polished site for your shop or a working prototype of
+            something new, you work directly with the person writing the code.
+          </p>
+        </div>
+        <ul class="stats">
+          <li><strong data-count="projects">0</strong><span>Projects shipped</span></li>
+          <li><strong>Web · iOS · AI</strong><span>Core focus</span></li>
+          <li><strong>1:1</strong><span>Direct with the developer</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact">
+        <h2>Have a project in mind?</h2>
+        <p class="lead">Tell me what you're building. I'll get back to you within a couple of days.</p>
+        <a class="btn" href="mailto:hello@ogreheart.com">hello@ogreheart.com</a>
+        <div class="socials">
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> Ogreheart LLC</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
