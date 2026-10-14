@@ -30,6 +30,6 @@ window.PROJECTS = [
     tagline: "Booking and education site for a barber",
     description: "Appointment booking, barber education, and social links for an independent barber. React + Tailwind.",
     tags: ["Web", "Client"],
-    links: { live: "barber/", code: "" },
+    links: { live: "rishdabarbher/", code: "" },
   },
 ];
