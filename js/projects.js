@@ -10,11 +10,11 @@ window.PROJECTS = [
     links: { live: "", code: "" },
   },
   {
-    title: "brooks-ai",
-    tagline: "AI-powered assistant",
-    description: "Placeholder — describe the problem brooks-ai solves and the tech behind it.",
-    tags: ["AI"],
-    links: { live: "", code: "" },
+    title: "Brooks AI",
+    tagline: "An AI you have to convince to help you",
+    description: "A chat game powered by Claude: talk Brooks into helping, then solve the grid. Python + FastAPI with streamed replies.",
+    tags: ["AI", "Game"],
+    links: { live: "", code: "" }, // brooks/ — re-enable when ready to launch
   },
   {
     title: "NCAAdle",
@@ -24,10 +24,10 @@ window.PROJECTS = [
     links: { live: "", code: "" },
   },
   {
-    title: "Risha Da Barber",
-    tagline: "Booking site for a local barber",
-    description: "Placeholder — describe the site, booking flow, and results for the client.",
+    title: "Rish Da Barbher",
+    tagline: "Booking and education site for a barber",
+    description: "Appointment booking, barber education, and social links for an independent barber. React + Tailwind.",
     tags: ["Web", "Client"],
-    links: { live: "", code: "" },
+    links: { live: "barber/", code: "" },
   },
 ];

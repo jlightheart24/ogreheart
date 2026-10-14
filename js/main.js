@@ -34,7 +34,7 @@
         card.appendChild(tags);
 
         const links = el("div", { class: "links" });
-        if (p.links?.live) links.appendChild(el("a", { href: p.links.live, target: "_blank", rel: "noopener" }, "Live ↗"));
+        if (p.links?.live) links.appendChild(el("a", { href: p.links.live, target: "_blank", rel: "noopener" }, "Visit ↗"));
         if (p.links?.code) links.appendChild(el("a", { href: p.links.code, target: "_blank", rel: "noopener" }, "Code ↗"));
         if (links.childElementCount) card.appendChild(links);
 
